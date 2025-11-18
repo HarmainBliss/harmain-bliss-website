@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmain Bliss | Exquisite Wedding Planning in Makkah & Madina</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Setup (Inter is standard, but defining a fallback) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfcf9; /* Very light warm off-white */
+        }
+        .hero-bg {
+            /* Placeholder for a beautiful image representing Makkah/Madina weddings with a golden tint */
+            background-image: url('https://placehold.co/1200x600/f0eace/a67c00?text=Harmain+Bliss');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom list style for services */
+        .service-list li {
+            position: relative;
+            padding-left: 1.75rem; /* 28px */
+            margin-bottom: 0.5rem; /* 8px */
+            color: #374151; /* text-gray-700 */
+        }
+        .service-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0.5rem; /* 8px */
+            top: -2px;
+            color: #D97706; /* amber-600 */
+            font-size: 1.25rem; /* 20px */
+            font-weight: bold;
+        }
+
+        /* Custom date input styling for white theme to ensure golden indicator */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.5) sepia(1) saturate(5) hue-rotate(350deg);
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-gray-800">
+
+    <!-- Navigation Bar --><header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="#" class="text-3xl font-extrabold text-black tracking-wider">
+                Harmain <span class="text-amber-600">Bliss</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-amber-600 transition duration-300 font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-amber-600 transition duration-300 font-medium">About Us</a>
+                <a href="#services" class="text-gray-700 hover:text-amber-600 transition duration-300 font-medium">Services</a>
+                <a href="#booking" class="px-4 py-2 rounded-full bg-amber-500 text-black hover:bg-amber-600 transition duration-300 font-semibold shadow-md shadow-amber-500/20">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) --><button id="menu-button" class="md:hidden text-gray-700 hover:text-amber-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu Dropdown --><div id="mobile-menu" class="hidden md:hidden bg-white w-full shadow-lg absolute">
+            <a href="#home" class="block py-3 px-4 text-center text-gray-700 hover:bg-gray-100 transition duration-150 border-t border-gray-200">Home</a>
+            <a href="#about" class="block py-3 px-4 text-center text-gray-700 hover:bg-gray-100 transition duration-150 border-t border-gray-200">About Us</a>
+            <a href="#services" class="block py-3 px-4 text-center text-gray-700 hover:bg-gray-100 transition duration-150 border-t border-gray-200">Services</a>
+            <a href="#booking" class="block py-3 px-4 text-center bg-amber-500 text-black hover:bg-amber-600 transition duration-150 border-t border-gray-200">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section --><section id="home" class="hero-bg text-center py-20 md:py-32 flex items-center justify-center">
+        <div class="bg-white bg-opacity-80 p-8 md:p-12 rounded-xl max-w-4xl mx-auto shadow-2xl">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-4 leading-tight">
+                Your Sacred Journey, Perfected
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 font-light">
+                We understand the spiritual significance of your celebration.
+            </p>
+            <a href="#services" class="inline-block px-10 py-4 text-lg bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-600 transition duration-300 shadow-xl shadow-amber-500/20 transform hover:scale-105">
+                Explore Our Blissful Services
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section --><section id="features" class="py-16 md:py-24 bg-neutral-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 --><div class="p-8 rounded-xl transition duration-500">
+                    <svg class="w-12 h-12 inline-block text-amber-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.727A8 8 0 016.343 3.273L4.305 5.311M6.343 16.727A8 8 0 0017.657 3.273l2.038 2.038M5 12h14M12 5v14"></path></svg>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Sacred Locations</h3>
+                    <p class="text-gray-600">
+                        Exclusive venues in Makkah and Madinah, carefully selected for their beauty and spiritual significance.
+                    </p>
+                </div>
+                <!-- Feature 2 --><div class="p-8 rounded-xl transition duration-500">
+                    <svg class="w-12 h-12 inline-block text-amber-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v18M11.391 15.612C14.28 16.35 15.589 17.584 15.589 19H8.411c0-1.416 1.31-2.65 4.199-3.388M12 11a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Personalized Care</h3>
+                    <p class="text-gray-600">
+                        Every detail tailored to your vision, with respect for Islamic traditions and cultural preferences.
+                    </p>
+                </div>
+                <!-- Feature 3 --><div class="p-8 rounded-xl transition duration-500">
+                    <svg class="w-12 h-12 inline-block text-amber-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Global Service</h3>
+                    <p class="text-gray-600">
+                        Seamless coordination for families traveling from around the world to celebrate in the blessed cities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section --><section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:space-x-12 items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/f0eace/a67c00?text=CEO+Sakina+Fatima" alt="CEO Sakina Fatima" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Meet Sakina Fatima</h2>
+                    <p class="text-xl text-amber-600 mb-4 font-medium">Founder & CEO of Harmain Bliss</p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        With a deep passion for celebrating love in the most sacred places on earth, Sakina Fatima established Harmain Bliss to help couples worldwide realize their dream of a blessed wedding in Makkah or Madinah.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Her vision combines meticulous attention to detail with cultural sensitivity, creating unforgettable experiences that honor both tradition and personal style.
+                    </p>
+                    <a href="#booking" class="mt-6 inline-block text-amber-600 font-semibold hover:text-amber-700 transition duration-300 border-b border-amber-600">
+                        Learn Our Story &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section --><section id="services" class="py-16 md:py-24 bg-neutral-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Comprehensive wedding planning for your blessed day.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+                <!-- Service 1: Complete Wedding Planning --><div class="p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border-t-4 border-amber-500 bg-white hover:shadow-amber-600/10">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-6">Complete Wedding Planning</h3>
+                    <p class="text-gray-700 mb-6">
+                        From intimate gatherings to grand celebrations, we orchestrate every moment.
+                    </p>
+                    <ul class="service-list space-y-2">
+                        <li>Venue selection and decoration</li>
+                        <li>Catering with halal excellence</li>
+                        <li>Photography and videography</li>
+                        <li>Guest accommodation coordination</li>
+                        
+                    </ul>
+                </div>
+                <!-- Service 2: Umrah & Wedding Packages --><div class="p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border-t-4 border-amber-500 bg-white hover:shadow-amber-600/10">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-6">Umrah & Wedding Packages</h3>
+                    <p class="text-gray-700 mb-6">
+                        Combine your special day with spiritual blessings.
+                    </p>
+                    <ul class="service-list space-y-2">
+                        <li>Umrah arrangements for families</li>
+                        <li>Guided tours of holy sites</li>
+                        <li>Transportation and logistics</li>
+                        <li>Prayer space arrangements</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="#booking" class="mt-12 inline-block px-10 py-4 text-lg bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-600 transition duration-300 shadow-xl shadow-amber-500/20 transform hover:scale-105">
+                View All Services
+            </a>
+        </div>
+    </section>
+
+    <!-- Booking/Contact Section --><section id="booking" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Ready to Plan Your Dream Wedding?</h2>
+            <p class="text-xl text-gray-600 mb-10">
+                Let's create something extraordinary together in the blessed cities.
+            </p>
+
+            <div class="bg-neutral-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                <h3 class="text-3xl font-semibold text-amber-600 mb-6">Book Your Consultation</h3>
+                <form class="space-y-6 text-left">
+                    
+                    <div>
+                        <label for="full-name" class="block text-lg font-medium text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="full-name" placeholder="Full Name" required class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" placeholder="Email Address" required class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-lg font-medium text-gray-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                        <input type="tel" id="phone" placeholder="Phone Number" required class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="current-location" class="block text-lg font-medium text-gray-700 mb-2">Your Current Location <span class="text-red-500">*</span></label>
+                        <input type="text" id="current-location" placeholder="City, Country" required class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="preferred-city" class="block text-lg font-medium text-gray-700 mb-2">Preferred City <span class="text-red-500">*</span></label>
+                        <select id="preferred-city" required class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-amber-500 focus:border-amber-500">
+                            <option value="">Select city</option>
+                            <option value="Makkah">Makkah</option>
+                            <option value="Madinah">Madinah</option>
+                            <option value="Both Cities">Both Cities</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="preferred-date" class="block text-lg font-medium text-gray-700 mb-2">Preferred Wedding Date</label>
+                        <input type="date" id="preferred-date" class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="guest-count" class="block text-lg font-medium text-gray-700 mb-2">Expected Guest Count</label>
+                        <input type="number" id="guest-count" placeholder="e.g., 150" min="10" class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="package-interest" class="block text-lg font-medium text-gray-700 mb-2">Package Interest</label>
+                        <select id="package-interest" class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-amber-500 focus:border-amber-500">
+                            <option value="">Select package</option>
+                            <option value="Essential Blessing">Essential Blessing</option>
+                            <option value="Grand Celebration">Grand Celebration</option>
+                            <option value="Royal Experience">Royal Experience</option>
+                            <option value="Custom Package">Custom Package</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vision" class="block text-lg font-medium text-gray-700 mb-2">Tell Us About Your Vision</label>
+                        <textarea id="vision" placeholder="Share your ideas, cultural preferences, or any specific requests..." rows="4" class="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:ring-amber-500 focus:border-amber-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-600 transition duration-300 shadow-lg shadow-amber-500/20 text-xl">
+                        Send Inquiry
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Get In Touch</h4>
+                    <p class="text-lg text-gray-600 mb-2">
+                        We're here to answer your questions and help you plan the wedding of your dreams in the blessed cities.
+                    </p>
+                    <p class="text-xl font-medium text-amber-600 mb-1">Email: <a href="mailto:infoharmainbliss@gmail.com" class="hover:text-amber-700 transition duration-300">infoharmainbliss@gmail.com</a></p>
+                    <p class="text-xl font-medium text-amber-600">Location: Makkah & Madinah, Kingdom of Saudi Arabia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-neutral-100 text-gray-600 py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="text-xl font-bold text-black">
+                    Harmain <span class="text-amber-600">Bliss</span>
+                </div>
+                <div class="text-sm">
+                    &copy; 2025 Harmain Bliss. All rights reserved. | <a href="mailto:infoharmainbliss@gmail.com" class="text-amber-600 hover:text-amber-700">infoharmainbliss@gmail.com</a>
+                </div>
+                <div class="text-sm">
+                    CEO: Sakina Fatima
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
